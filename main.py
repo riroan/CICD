@@ -7,4 +7,4 @@ def func():
     return {"message":"hello"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, port = 9000)
+    uvicorn.run(app, port = 9000, host="0.0.0.0")
