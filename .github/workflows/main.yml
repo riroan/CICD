@@ -17,4 +17,6 @@ jobs:
         script: |
           cd CICD
           git pull
+          docker build -t myimage .
+          docker run -d -it --name mycontainer -p 9000:9000 myimage
 
