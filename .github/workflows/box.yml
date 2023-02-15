@@ -1,0 +1,13 @@
+name: box folder
+
+on:
+  push:
+    paths:
+      - 'box/**'
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "BOX FOLDER PUSH"
