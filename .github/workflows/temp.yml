@@ -1,0 +1,13 @@
+name: temp branch
+
+on:
+  push:
+    branches:
+      - temp
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "TEMP BRANCH PUSH"
